@@ -1,5 +1,5 @@
 from django.db import models
-from django.utils.encoding import smart_unicode
+from django.utils.encoding import smart_text
 
 import json
 
@@ -15,4 +15,4 @@ class RegistrationInfo(models.Model):
 
     def __unicode__(self):
         _details = json.loads(self.contact)
-        return smart_unicode(self.team_name + ":" + _details['contact'] + ":" + _details['name'] + ": " + _details['email'])
+        return smart_text(self.team_name + ":" + _details['contact'] + ":" + _details['name'] + ": " + _details['email'])

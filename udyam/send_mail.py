@@ -1,5 +1,5 @@
 import sendgrid
-from mail_data import *
+from .mail_data import *
 import os
 
 

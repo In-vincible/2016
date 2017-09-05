@@ -1,8 +1,8 @@
 from django.shortcuts import render, HttpResponse
-from models import RegistrationInfo
+from .models import RegistrationInfo
 from django.views.decorators.csrf import csrf_exempt
 import json
-from send_mail import SendMail
+from .send_mail import SendMail
 
 @csrf_exempt
 def index(request):

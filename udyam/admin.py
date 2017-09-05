@@ -1,13 +1,13 @@
 from import_export import resources
 from import_export.admin import ImportExportModelAdmin
 from django.contrib import admin
-import models
+from .models import * #import models
 
 
 class ParticipantResource(resources.ModelResource):
 
     class Meta:
-        model = models.RegistrationInfo
+        model = RegistrationInfo
 
 class ParticipantAdmin(ImportExportModelAdmin):
     resource_class = ParticipantResource
@@ -18,4 +18,4 @@ class ParticipantAdmin(ImportExportModelAdmin):
 #     model = RegistrationInfo
 #     list_filter = ['event_name']
 
-admin.site.register(models.RegistrationInfo, ParticipantAdmin)
+admin.site.register(RegistrationInfo, ParticipantAdmin)
