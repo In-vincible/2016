@@ -1,14 +1,14 @@
 events_data = {
     'code42day': ('CODE-4-2DAY', 'lehar.jain.ece13@iitbhu.ac.in'),
     'codedef': ('CODEDEF', 'apoorv.agarwal.ece13@itbhu.ac.in'),
-    'continnum': ('CONTINNUM','bhanu.chaudhary.ece13@iitbhu.ac.in'),
-    'commnet': ('COMMNET', 'cnaimesh.maddula.ece13@iitbhu.ac.in'),
+    'continnum': ('CONTINNUM','harsh.raj.ece15@itbhu.ac.in'),
+    'commnet': ('COMMNET', 'chetan.dashora.ece15@itbhu.ac.in'),
     'ctf': ('CTF', 'ayush.singh.ece13@iitbhu.ac.in'),
-    'digisim': ('DIGISIM', 'harshil.jain.ece13@itbhu.ac.in'),
-    'funckit': ('FUNCKIT', 'anushka.verma.ece13@itbhu.ac.in'),
-    'ichip': ('I-CHIP', 'arnabkr.mondal.ece13@itbhu.ac.in'),
-    'krypto': ('KRYPTO', 'shailesh.tripathi.ece13@iitbhu.ac.in'),
-    'mosaic': ('MOSIAC', 'piyush.soni.ece13@itbhu.ac.in'),
+    'digisim': ('DIGISIM', 'vidit.agarwal.ece15@itbhu.ac.in'),
+    'funckit': ('FUNCKIT', 'shivam.bansal.ece15@itbhu.ac.in'),
+    'ichip': ('I-CHIP', 'vibhour.bansal.ece15@itbhu.ac.in'),
+    'krypto': ('SPYBITS', 'shubham.pandey.ece15@itbhu.ac.in'),
+    'mosaic': ('MOSIAC', 'ekansh.gupta.ece15@itbhu.ac.in'),
     'muse': ('MUSE', 'pratyush.singh.ece13@iitbhu.ac.in'),
     'raspi': ('RASPI', 't.sairam.ece13@iitbhu.ac.in')
 }
