@@ -9,7 +9,9 @@ def index(request):
     if request.method == 'POST':
         error = 0
         try:
+			#print(1)
             form_detail = json.loads(request.body)
+            print(0)
             team = RegistrationInfo()
             team.event_name = form_detail[u'event']
             team.contact = json.dumps(form_detail[u'main_contact'])
@@ -19,8 +21,13 @@ def index(request):
             mail = SendMail(form_detail)
             mail.mail_coordinator()
             mail.mail_representative()
-        except:
+        except Exception as inst:
             error = 1
+            #print(type(inst))
+            #x,y=inst.args
+            #print(x)
+            #print(y)
+            #print(34)
         return HttpResponse(json.dumps({'error': error}), content_type='application/json')
     return render(request, 'home.html')
 
