@@ -9,9 +9,8 @@ def index(request):
     if request.method == 'POST':
         error = 0
         try:
-			#print(1)
-            form_detail = json.loads(request.body)
-            print(0)
+            #print (request.body)
+            form_detail = json.loads(request.body.decode("utf-8"))
             team = RegistrationInfo()
             team.event_name = form_detail[u'event']
             team.contact = json.dumps(form_detail[u'main_contact'])
@@ -22,6 +21,7 @@ def index(request):
             mail.mail_coordinator()
             mail.mail_representative()
         except Exception as inst:
+
             error = 1
             #print(type(inst))
             #x,y=inst.args

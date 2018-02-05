@@ -16,3 +16,4 @@ class RegistrationInfo(models.Model):
     def __unicode__(self):
         _details = json.loads(self.contact)
         return smart_text(self.team_name + ":" + _details['contact'] + ":" + _details['name'] + ": " + _details['email'])
+
