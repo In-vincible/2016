@@ -9,7 +9,17 @@
 	<link rel="stylesheet" href="{% static 'css/style.css' %}"> <!-- Resource style -->
 	<script src="{% static 'js/modernizr.js' %}"></script> <!-- Modernizr -->
 
-	<title>Muse</title>
+    <title>Muse</title>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-113699821-1"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'UA-113699821-1');
+    </script>
+
 </head>
 <body>
 	<div class="cd-fold-content single-page" id="main_page">
