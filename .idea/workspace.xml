@@ -20,97 +20,62 @@
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="home.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/templates/home.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="126">
-              <caret line="6" column="104" lean-forward="false" selection-start-line="6" selection-start-column="4" selection-end-line="6" selection-end-column="104" />
-              <folding>
-                <element signature="n#style#0;n#a#0;n#div#0;n#div#0;n#div#3;n#div#2;n#section#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <marker date="1518037173606" expanded="false" signature="2909:2943" ph="..." />
-                <marker date="1518037173606" expanded="false" signature="3029:3124" ph="..." />
-                <marker date="1518037173606" expanded="false" signature="3403:3409" ph=" " />
-                <marker date="1518037173606" expanded="false" signature="3751:3757" ph=" " />
-                <marker date="1518037173606" expanded="false" signature="4078:4084" ph=" " />
-                <marker date="1518037173606" expanded="false" signature="4424:4430" ph=" " />
-                <marker date="1518037173606" expanded="false" signature="4749:4755" ph=" " />
-                <marker date="1518037173606" expanded="false" signature="6791:6810" ph="..." />
-                <marker date="1518037173606" expanded="false" signature="7027:7045" ph="..." />
-                <marker date="1518037173606" expanded="false" signature="9322:9340" ph="..." />
-                <marker date="1518037173606" expanded="false" signature="9687:9693" ph=" " />
-                <marker date="1518037173606" expanded="false" signature="9693:9699" ph=" " />
-                <marker date="1518037173606" expanded="false" signature="9821:9827" ph=" " />
-                <marker date="1518037173606" expanded="false" signature="9827:9833" ph=" " />
-                <marker date="1518037173606" expanded="false" signature="9919:9925" ph=" " />
-                <marker date="1518037173606" expanded="false" signature="9925:9931" ph=" " />
-                <marker date="1518037173606" expanded="false" signature="10819:10830" ph="..." />
-                <marker date="1518037173606" expanded="false" signature="11531:11547" ph="..." />
-                <marker date="1518037173606" expanded="false" signature="20980:21056" ph="..." />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="events.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/templates/events.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="84">
-              <caret line="4" column="116" lean-forward="true" selection-start-line="4" selection-start-column="116" selection-end-line="4" selection-end-column="116" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="workshop.html" pinned="false" current-in-tab="false">
+      <file leaf-file-name="workshop.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/templates/workshop.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="63">
-              <caret line="3" column="134" lean-forward="false" selection-start-line="3" selection-start-column="134" selection-end-line="3" selection-end-column="134" />
+            <state relative-caret-position="235">
+              <caret line="48" column="38" lean-forward="true" selection-start-line="48" selection-start-column="38" selection-end-line="48" selection-end-column="38" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="mosaic.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/templates/mosaic.html">
+      <file leaf-file-name="i-chip.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/templates/i-chip.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="147">
-              <caret line="7" column="61" lean-forward="false" selection-start-line="7" selection-start-column="61" selection-end-line="7" selection-end-column="61" />
-              <folding>
-                <marker date="1517984918176" expanded="false" signature="907:924" ph="..." />
-                <marker date="1517984918176" expanded="false" signature="1371:1388" ph="..." />
-                <marker date="1517984918176" expanded="false" signature="2673:2690" ph="..." />
-                <marker date="1517984918176" expanded="false" signature="3688:3705" ph="..." />
-                <marker date="1517984918176" expanded="false" signature="4564:4578" ph="..." />
-              </folding>
+            <state relative-caret-position="357">
+              <caret line="98" column="9" lean-forward="false" selection-start-line="98" selection-start-column="9" selection-end-line="101" selection-end-column="14" />
+              <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="krypto-w.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/templates/krypto-w.html">
+      <file leaf-file-name="i-chip-w.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/templates/i-chip-w.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="169">
-              <caret line="26" column="63" lean-forward="false" selection-start-line="26" selection-start-column="63" selection-end-line="26" selection-end-column="63" />
-              <folding>
-                <marker date="1517984917789" expanded="true" signature="743:3129" ph="..." />
-                <marker date="1517984917789" expanded="true" signature="801:2914" ph="..." />
-                <marker date="1517984917789" expanded="false" signature="837:854" ph="..." />
-                <marker date="1517984917789" expanded="true" signature="855:1431" ph="..." />
-                <marker date="1517984917789" expanded="true" signature="1436:1453" ph="..." />
-                <marker date="1517984917789" expanded="false" signature="1474:1491" ph="..." />
-                <marker date="1517984917789" expanded="true" signature="1492:1703" ph="..." />
-                <marker date="1517984917789" expanded="true" signature="1708:1726" ph="..." />
-                <marker date="1517984917789" expanded="false" signature="1747:1764" ph="..." />
-                <marker date="1517984917789" expanded="true" signature="1765:1969" ph="..." />
-                <marker date="1517984917789" expanded="true" signature="1974:1997" ph="..." />
-                <marker date="1517984917789" expanded="false" signature="2023:2037" ph="..." />
-                <marker date="1517984917789" expanded="true" signature="2038:2899" ph="..." />
-                <marker date="1517984917789" expanded="true" signature="2064:2252" ph="..." />
-                <marker date="1517984917789" expanded="true" signature="2278:2462" ph="..." />
-                <marker date="1517984917789" expanded="true" signature="2488:2678" ph="..." />
-                <marker date="1517984917789" expanded="true" signature="2704:2888" ph="..." />
-              </folding>
+            <state relative-caret-position="424">
+              <caret line="51" column="46" lean-forward="false" selection-start-line="51" selection-start-column="46" selection-end-line="51" selection-end-column="46" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="football.css" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/udyam/static/css/football.css">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="0">
+              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="materialize.css" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/udyam/static/css/materialize.css">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="0">
+              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="navigation.css" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/udyam/static/css/navigation.css">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="441">
+              <caret line="27" column="19" lean-forward="false" selection-start-line="27" selection-start-column="18" selection-end-line="27" selection-end-column="19" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -118,42 +83,19 @@
       <file leaf-file-name="base.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/templates/base.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="105">
-              <caret line="5" column="96" lean-forward="false" selection-start-line="5" selection-start-column="4" selection-end-line="5" selection-end-column="96" />
+            <state relative-caret-position="200">
+              <caret line="31" column="22" lean-forward="true" selection-start-line="31" selection-start-column="22" selection-end-line="31" selection-end-column="22" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="style.css" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/udyam/static/css/style.css">
+      <file leaf-file-name="home.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/templates/home.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="465">
-              <caret line="112" column="0" lean-forward="false" selection-start-line="112" selection-start-column="0" selection-end-line="112" selection-end-column="0" />
+            <state relative-caret-position="-736">
+              <caret line="145" column="63" lean-forward="true" selection-start-line="145" selection-start-column="63" selection-end-line="145" selection-end-column="63" />
               <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="styles.css" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/udyam/static/css/styles.css">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="21">
-              <caret line="407" column="15" lean-forward="true" selection-start-line="407" selection-start-column="15" selection-end-line="407" selection-end-column="15" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="sponsors.html" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/templates/sponsors.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="210">
-              <caret line="10" column="37" lean-forward="true" selection-start-line="10" selection-start-column="37" selection-end-line="10" selection-end-column="37" />
-              <folding>
-                <marker date="1518037488545" expanded="false" signature="2999:3015" ph="..." />
-                <marker date="1518037488545" expanded="false" signature="3391:3407" ph="..." />
-              </folding>
             </state>
           </provider>
         </entry>
@@ -161,8 +103,18 @@
       <file leaf-file-name="team.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/templates/team.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="294">
-              <caret line="14" column="15" lean-forward="true" selection-start-line="14" selection-start-column="15" selection-end-line="14" selection-end-column="15" />
+            <state relative-caret-position="357">
+              <caret line="23" column="30" lean-forward="false" selection-start-line="23" selection-start-column="30" selection-end-line="23" selection-end-column="30" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="my-slider.css" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/udyam/static/css/my-slider.css">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-3360">
+              <caret line="11" column="12" lean-forward="false" selection-start-line="11" selection-start-column="12" selection-end-line="11" selection-end-column="12" />
               <folding />
             </state>
           </provider>
@@ -179,6 +131,7 @@
       <find>16</find>
       <find>registerati</find>
       <find>N.A</find>
+      <find>nav-wrapper</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -193,11 +146,9 @@
         <option value="$PROJECT_DIR$/udyam/views.py" />
         <option value="$USER_HOME$/Downloads/Averaged Avalanche(Text).py" />
         <option value="$USER_HOME$/Downloads/Averaged Avalanche(Key).py" />
-        <option value="$PROJECT_DIR$/templates/i-chip-w.html" />
         <option value="$PROJECT_DIR$/templates/mosaic.html" />
         <option value="$PROJECT_DIR$/templates/digisim.html" />
         <option value="$PROJECT_DIR$/templates/funckit.html" />
-        <option value="$PROJECT_DIR$/templates/i-chip.html" />
         <option value="$PROJECT_DIR$/templates/continuum.html" />
         <option value="$PROJECT_DIR$/templates/commnet.html" />
         <option value="$PROJECT_DIR$/templates/krypto.html" />
@@ -205,11 +156,17 @@
         <option value="$PROJECT_DIR$/templates/base.html" />
         <option value="$PROJECT_DIR$/udyam/static/css/style.css" />
         <option value="$PROJECT_DIR$/udyam/static/css/styles.css" />
-        <option value="$PROJECT_DIR$/templates/home.html" />
         <option value="$PROJECT_DIR$/templates/events.html" />
-        <option value="$PROJECT_DIR$/templates/workshop.html" />
         <option value="$PROJECT_DIR$/templates/team.html" />
         <option value="$PROJECT_DIR$/templates/sponsors.html" />
+        <option value="$PROJECT_DIR$/templates/mosaic-w.html" />
+        <option value="$PROJECT_DIR$/templates/continuum-w.html" />
+        <option value="$PROJECT_DIR$/templates/digisim-w.html" />
+        <option value="$PROJECT_DIR$/udyam/static/css/navigation.css" />
+        <option value="$PROJECT_DIR$/templates/workshop.html" />
+        <option value="$PROJECT_DIR$/templates/i-chip.html" />
+        <option value="$PROJECT_DIR$/templates/i-chip-w.html" />
+        <option value="$PROJECT_DIR$/templates/home.html" />
       </list>
     </option>
   </component>
@@ -756,36 +713,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/templates/i-chip.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="169">
-          <caret line="89" column="51" lean-forward="false" selection-start-line="89" selection-start-column="51" selection-end-line="89" selection-end-column="51" />
-          <folding>
-            <marker date="1517984917700" expanded="true" signature="812:3931" ph="..." />
-            <marker date="1517984917700" expanded="true" signature="870:3790" ph="..." />
-            <marker date="1517984917700" expanded="true" signature="902:1108" ph="..." />
-            <marker date="1517984917700" expanded="true" signature="1114:1567" ph="..." />
-            <marker date="1517984917700" expanded="true" signature="1572:1597" ph="..." />
-            <marker date="1517984917700" expanded="false" signature="1610:1627" ph="..." />
-            <marker date="1517984917700" expanded="true" signature="1628:2739" ph="..." />
-            <marker date="1517984917700" expanded="true" signature="1663:2732" ph="..." />
-            <marker date="1517984917700" expanded="true" signature="2745:2768" ph="..." />
-            <marker date="1517984917700" expanded="false" signature="2781:2798" ph="..." />
-            <marker date="1517984917700" expanded="true" signature="2799:2953" ph="..." />
-            <marker date="1517984917700" expanded="true" signature="2834:2946" ph="..." />
-            <marker date="1517984917700" expanded="true" signature="2958:2982" ph="..." />
-            <marker date="1517984917700" expanded="false" signature="2995:3012" ph="..." />
-            <marker date="1517984917700" expanded="true" signature="3013:3273" ph="..." />
-            <marker date="1517984917700" expanded="true" signature="3048:3266" ph="..." />
-            <marker date="1517984917700" expanded="true" signature="3278:3301" ph="..." />
-            <marker date="1517984917700" expanded="false" signature="3327:3341" ph="..." />
-            <marker date="1517984917700" expanded="true" signature="3342:3779" ph="..." />
-            <marker date="1517984917700" expanded="true" signature="3368:3556" ph="..." />
-            <marker date="1517984917700" expanded="true" signature="3582:3768" ph="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/templates/funckit.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="169">
@@ -850,14 +777,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/templates/i-chip-w.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="169">
-          <caret line="16" column="139" lean-forward="false" selection-start-line="16" selection-start-column="139" selection-end-line="16" selection-end-column="139" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/templates/krypto.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="169">
@@ -916,30 +835,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/udyam/static/css/style.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="465">
-          <caret line="112" column="0" lean-forward="false" selection-start-line="112" selection-start-column="0" selection-end-line="112" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/udyam/static/css/styles.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="21">
-          <caret line="407" column="15" lean-forward="true" selection-start-line="407" selection-start-column="15" selection-end-line="407" selection-end-column="15" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/templates/base.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="5" column="96" lean-forward="false" selection-start-line="5" selection-start-column="4" selection-end-line="5" selection-end-column="96" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/templates/mosaic.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="147">
@@ -954,35 +849,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/templates/home.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="126">
-          <caret line="6" column="104" lean-forward="false" selection-start-line="6" selection-start-column="4" selection-end-line="6" selection-end-column="104" />
-          <folding>
-            <element signature="n#style#0;n#a#0;n#div#0;n#div#0;n#div#3;n#div#2;n#section#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <marker date="1518037173606" expanded="false" signature="2909:2943" ph="..." />
-            <marker date="1518037173606" expanded="false" signature="3029:3124" ph="..." />
-            <marker date="1518037173606" expanded="false" signature="3403:3409" ph=" " />
-            <marker date="1518037173606" expanded="false" signature="3751:3757" ph=" " />
-            <marker date="1518037173606" expanded="false" signature="4078:4084" ph=" " />
-            <marker date="1518037173606" expanded="false" signature="4424:4430" ph=" " />
-            <marker date="1518037173606" expanded="false" signature="4749:4755" ph=" " />
-            <marker date="1518037173606" expanded="false" signature="6791:6810" ph="..." />
-            <marker date="1518037173606" expanded="false" signature="7027:7045" ph="..." />
-            <marker date="1518037173606" expanded="false" signature="9322:9340" ph="..." />
-            <marker date="1518037173606" expanded="false" signature="9687:9693" ph=" " />
-            <marker date="1518037173606" expanded="false" signature="9693:9699" ph=" " />
-            <marker date="1518037173606" expanded="false" signature="9821:9827" ph=" " />
-            <marker date="1518037173606" expanded="false" signature="9827:9833" ph=" " />
-            <marker date="1518037173606" expanded="false" signature="9919:9925" ph=" " />
-            <marker date="1518037173606" expanded="false" signature="9925:9931" ph=" " />
-            <marker date="1518037173606" expanded="false" signature="10819:10830" ph="..." />
-            <marker date="1518037173606" expanded="false" signature="11531:11547" ph="..." />
-            <marker date="1518037173606" expanded="false" signature="20980:21056" ph="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/templates/events.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="84">
@@ -991,30 +857,142 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/templates/workshop.html">
+    <entry file="file://$PROJECT_DIR$/templates/sponsors.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="63">
-          <caret line="3" column="134" lean-forward="false" selection-start-line="3" selection-start-column="134" selection-end-line="3" selection-end-column="134" />
+        <state relative-caret-position="147">
+          <caret line="15" column="14" lean-forward="true" selection-start-line="15" selection-start-column="14" selection-end-line="15" selection-end-column="14" />
+          <folding>
+            <marker date="1518037488545" expanded="false" signature="2999:3015" ph="..." />
+            <marker date="1518037488545" expanded="false" signature="3391:3407" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/mosaic-w.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="504">
+          <caret line="42" column="99" lean-forward="false" selection-start-line="42" selection-start-column="99" selection-end-line="42" selection-end-column="99" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/continuum-w.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="420">
+          <caret line="32" column="94" lean-forward="false" selection-start-line="32" selection-start-column="94" selection-end-line="32" selection-end-column="94" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/digisim-w.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="273">
+          <caret line="37" column="6" lean-forward="true" selection-start-line="37" selection-start-column="6" selection-end-line="37" selection-end-column="6" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/udyam/static/css/style.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="465">
+          <caret line="112" column="0" lean-forward="false" selection-start-line="112" selection-start-column="0" selection-end-line="112" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/udyam/static/css/styles.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="3612">
+          <caret line="401" column="24" lean-forward="false" selection-start-line="401" selection-start-column="24" selection-end-line="401" selection-end-column="24" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/udyam/static/css/animate.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="169">
+          <caret line="17" column="3" lean-forward="false" selection-start-line="17" selection-start-column="2" selection-end-line="17" selection-end-column="3" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/udyam/static/css/football.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/udyam/static/css/materialize.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/udyam/static/css/my-slider.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-3360">
+          <caret line="11" column="12" lean-forward="false" selection-start-line="11" selection-start-column="12" selection-end-line="11" selection-end-column="12" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/i-chip.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="357">
+          <caret line="98" column="9" lean-forward="false" selection-start-line="98" selection-start-column="9" selection-end-line="101" selection-end-column="14" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/i-chip-w.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="424">
+          <caret line="51" column="46" lean-forward="false" selection-start-line="51" selection-start-column="46" selection-end-line="51" selection-end-column="46" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/templates/team.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="294">
-          <caret line="14" column="15" lean-forward="true" selection-start-line="14" selection-start-column="15" selection-end-line="14" selection-end-column="15" />
+        <state relative-caret-position="357">
+          <caret line="23" column="30" lean-forward="false" selection-start-line="23" selection-start-column="30" selection-end-line="23" selection-end-column="30" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/templates/sponsors.html">
+    <entry file="file://$PROJECT_DIR$/udyam/static/css/navigation.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="210">
-          <caret line="10" column="37" lean-forward="true" selection-start-line="10" selection-start-column="37" selection-end-line="10" selection-end-column="37" />
-          <folding>
-            <marker date="1518037488545" expanded="false" signature="2999:3015" ph="..." />
-            <marker date="1518037488545" expanded="false" signature="3391:3407" ph="..." />
-          </folding>
+        <state relative-caret-position="441">
+          <caret line="27" column="19" lean-forward="false" selection-start-line="27" selection-start-column="18" selection-end-line="27" selection-end-column="19" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/base.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="200">
+          <caret line="31" column="22" lean-forward="true" selection-start-line="31" selection-start-column="22" selection-end-line="31" selection-end-column="22" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/home.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-736">
+          <caret line="145" column="63" lean-forward="true" selection-start-line="145" selection-start-column="63" selection-end-line="145" selection-end-column="63" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/workshop.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="235">
+          <caret line="48" column="38" lean-forward="true" selection-start-line="48" selection-start-column="38" selection-end-line="48" selection-end-column="38" />
+          <folding />
         </state>
       </provider>
     </entry>
