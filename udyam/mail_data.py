@@ -8,7 +8,7 @@ events_data = {
     'funckit': ('FUNCKIT', 'shivam.bansal.ece15@itbhu.ac.in'),
     'ichip': ('I-CHIP', 'vibhour.bansal.ece15@itbhu.ac.in'),
     'krypto': ('SPYBITS', 'shubham.pandey.ece15@itbhu.ac.in'),
-    'mosaic': ('MOSIAC', 'ekansh.gupta.ece15@itbhu.ac.in'),
+    'mosaic': ('MOSIAC', 'sahil.thakur.ece15@itbhu.ac.in'),
     'muse': ('MUSE', 'pratyush.singh.ece13@iitbhu.ac.in'),
     'raspi': ('RASPI', 't.sairam.ece13@iitbhu.ac.in')
 }

@@ -17,10 +17,11 @@ def index(request):
             team.team_name = form_detail[u'team_name']
             team.team_details = form_detail[u'team_details']
             team.save()
-            mail = SendMail(form_detail)
-            mail.mail_coordinator()
-            mail.mail_representative()
-        except Exception as inst:
+            #mail = SendMail(form_detail)
+            #mail.mail_coordinator()
+            #mail.mail_representative()
+
+        except:
 
             error = 1
             #print(type(inst))
