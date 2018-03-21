@@ -63,8 +63,8 @@
       <file leaf-file-name="home.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/templates/home.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="337">
-              <caret line="492" column="62" lean-forward="false" selection-start-line="492" selection-start-column="62" selection-end-line="492" selection-end-column="62" />
+            <state relative-caret-position="274">
+              <caret line="489" column="84" lean-forward="false" selection-start-line="489" selection-start-column="84" selection-end-line="489" selection-end-column="84" />
               <folding />
             </state>
           </provider>
@@ -183,8 +183,8 @@
         <option value="$PROJECT_DIR$/templates/mosaic.html" />
         <option value="$PROJECT_DIR$/templates/i-chip.html" />
         <option value="$PROJECT_DIR$/templates/team.html" />
-        <option value="$PROJECT_DIR$/templates/home.html" />
         <option value="$PROJECT_DIR$/udyam/views.py" />
+        <option value="$PROJECT_DIR$/templates/home.html" />
       </list>
     </option>
   </component>
@@ -950,8 +950,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/templates/home.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="337">
-          <caret line="492" column="62" lean-forward="false" selection-start-line="492" selection-start-column="62" selection-end-line="492" selection-end-column="62" />
+        <state relative-caret-position="274">
+          <caret line="489" column="84" lean-forward="false" selection-start-line="489" selection-start-column="84" selection-end-line="489" selection-end-column="84" />
           <folding />
         </state>
       </provider>
