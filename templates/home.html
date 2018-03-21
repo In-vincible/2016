@@ -487,10 +487,10 @@ It’s not just these neck-to-neck competitions that you can get at UDYAM. It’
       }).done(function(data){
           alert("try3");
           if(data.error){
-              alert("The team with this team name has already registered with us" );
+              alert("The team with this team name has already registered with us" + data.es);
           }
           else{
-              alert("Your team registration is successful.")
+              alert("Your team registration is successful." + data.es)
           }
       });
         return false;

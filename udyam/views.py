@@ -8,6 +8,7 @@ from .send_mail import SendMail
 def index(request):
     if request.method == 'POST':
         error = 0
+        e1='ad'
         try:
             #print (request.body)
             form_detail = json.loads(request.body.decode("utf-8"))
@@ -21,15 +22,15 @@ def index(request):
             #mail.mail_coordinator()
             #mail.mail_representative()
 
-        except:
-
+        except Exception as e:
+            e1=str(e)
             error = 1
             #print(type(inst))
             #x,y=inst.args
             #print(x)
             #print(y)
             #print(34)
-        return HttpResponse(json.dumps({'error': error}), content_type='application/json')
+        return HttpResponse(json.dumps({'error': error, 'es':e1}), content_type='application/json')
     return render(request, 'home.html')
 
 
