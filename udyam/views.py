@@ -22,9 +22,9 @@ def index(request):
             team.team_name = form_detail[u'team_name']
             team.team_details = form_detail[u'team_details']
             team.save()
-            #mail = SendMail(form_detail)
-            #mail.mail_coordinator()
-            #mail.mail_representative()
+            mail = SendMail(form_detail)
+            mail.mail_coordinator()
+            mail.mail_representative()
 
         except Exception as e:
             e1=str(e)
