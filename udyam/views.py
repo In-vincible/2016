@@ -15,7 +15,7 @@ def index(request):
             team = RegistrationInfo()
             teamp=RegistrationInfo.objects.all().last()
             team.id=1
-            if (teamp!=None)
+            if (teamp!=None):
                 team.id=teamp.id+1
             team.event_name = form_detail[u'event']
             team.contact = json.dumps(form_detail[u'main_contact'])
