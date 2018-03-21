@@ -8,7 +8,7 @@ from .send_mail import SendMail
 def index(request):
     if request.method == 'POST':
         error = 0
-        try:
+        if True:
             #print (request.body)
             form_detail = json.loads(request.body.decode("utf-8"))
             team = RegistrationInfo()
@@ -21,7 +21,7 @@ def index(request):
             #mail.mail_coordinator()
             #mail.mail_representative()
 
-        except:
+        else:
 
             error = 1
             #print(type(inst))
