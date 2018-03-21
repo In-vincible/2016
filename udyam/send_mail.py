@@ -12,13 +12,13 @@ class SendMail:
 
     def mail_representative(self):
         sg_client = sendgrid.SendGridClient(self.APIKEY)
-        _subject = "Registered successfully for " + events_data[self.data[u'event']][0] + " in UDYAM-2016"
+        _subject = "Registered successfully for " + events_data[self.data[u'event']][0] + " in UDYAM-2018"
         _body = html_head + participant_mail_body.format(self.data[u'event']) + html_footer
         message = sendgrid.Mail()
         message.add_to(self.data[u'main_contact'][u'email'])
         message.set_subject(_subject)
         message.set_html(_body)
-        message.set_from('Team UDYAM<no-reply@udyam.com>')
+        message.set_from('Team UDYAM<no-reply@udyamfest.in>')
         sg_client.send(message)
 
 
@@ -37,5 +37,5 @@ class SendMail:
         message.set_subject(_subject)
         message.set_html(_body)
         message.add_cc('udyam@itbhu.ac.in')
-        message.set_from('Team UDYAM<no-reply@udyam.com>')
+        message.set_from('Team UDYAM<no-reply@udyamfest.in>')
         sg_client.send(message)
