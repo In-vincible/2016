@@ -6,10 +6,10 @@ events_data = {
     'ctf': ('CTF', 'ayush.singh.ece13@iitbhu.ac.in'),
     'digisim': ('DIGISIM', 'vidit.agarwal.ece15@itbhu.ac.in'),
     'funckit': ('FUNCKIT', 'shivam.bansal.ece15@itbhu.ac.in'),
-    'ichip': ('I-CHIP', 'vibhour.bansal.ece15@itbhu.ac.in'),
+    'ichip': ('I-CHIP', 'mithilesh.krishan.ece15@itbhu.ac.in'),
     'krypto': ('SPYBITS', 'shubham.pandey.ece15@itbhu.ac.in'),
     'mosaic': ('MOSIAC', 'sahil.thakur.ece15@itbhu.ac.in'),
-    'muse': ('MUSE', 'pratyush.singh.ece13@iitbhu.ac.in'),
+    'muse': ('MUSE', 'mithilesh.krishan.ece15@itbhu.ac.in'),
     'raspi': ('RASPI', 't.sairam.ece13@iitbhu.ac.in')
 }
 
@@ -22,13 +22,13 @@ html_head +='<body style="font-size:14px;font-family:Verdana">'
 participant_mail_body = """
 <p>
 <br>Thank you for registering with us.
-<br>You have been successfully registered for {0} event in <b>UDYAM '16</b>.
+<br>You have been successfully registered for {0} event in <b>UDYAM '18</b>.
 
 <br> For further queries contact coordinators of {0} event.
 <br>
 <br>
  <br> To stay updated like us on <a href='https://www.facebook.com/udyamfest'>facebook</a>
- <br> Visit your <a href='http://www.udyamfest.org/'>website</a> for more exciting events and updates.
+ <br> Visit your <a href='http://www.udyamfest.in/'>website</a> for more exciting events and updates.
 """
 
 coordinator_mail_body = """
