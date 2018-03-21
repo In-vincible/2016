@@ -36,3 +36,7 @@ def index(request):
 def static_page(request, page):
     page += '.html'
     return render(request, page)
+
+def adminData(request):
+    oll = RegistrationInfo.objects.all()
+    return render(request, 'adminD.html', {'data': oll})

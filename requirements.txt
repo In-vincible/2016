@@ -3,4 +3,4 @@ django-import-export
 gunicorn
 sendgrid
 whitenoise
-
+dj_database_url

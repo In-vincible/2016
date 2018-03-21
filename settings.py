@@ -12,7 +12,7 @@ https://docs.djangoproject.com/en/1.8/ref/settings/
 
 # Build paths inside the project like this: os.path.join(BASE_DIR, ...)
 import os
-
+import dj_database_url
 BASE_DIR = os.path.abspath(os.path.join(os.path.dirname(__file__)))
 
 # Quick-start development settings - unsuitable for production
@@ -24,7 +24,7 @@ SECRET_KEY = 's_fn#bonqb-@acp2nk83dt2pu&m678l7h&loh!9%-2*@+jx7yu'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['*']
 
 
 # Application definition
@@ -85,7 +85,8 @@ DATABASES = {
     }
 }
 
-
+db_from_env = dj_database_url.config(conn_max_age=500)
+DATABASES['default'].update(db_from_env)
 # Internationalization
 # https://docs.djangoproject.com/en/1.8/topics/i18n/
 
