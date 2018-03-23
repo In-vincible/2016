@@ -33,8 +33,8 @@ Note: As this is an automatically generated email, please don't reply to this ma
 
 Regards
 Team UDYAM
-
 ‌'''
+
 MAIL_SUBJECT = u"UDYAM'18 %s"
 @csrf_exempt
 def index(request):
