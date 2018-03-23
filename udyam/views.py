@@ -35,8 +35,8 @@ Note: As this is an automatically generated email, please don't reply to this ma
 Regards
 Team UDYAM
 
-‌'''
-MAIL_SUBJECT = "UDYAM'18 %s"
+'''
+# ‌MAIL_SUBJECT = "UDYAM'18 %s"
 @csrf_exempt
 def index(request):
     if request.method == 'POST':
@@ -55,12 +55,10 @@ def index(request):
             team.team_name = form_detail[u'team_name']
             team.team_details = form_detail[u'team_details']
             team.save()
-            print(form_detail)
             contacts = [c.get('email') for c in form_detail[u'team_details'] if c]
-            print(contacts)
             contacts = str(contacts).replace(',','\n').replace(']','').replace('[','').replace("'","")
             body = MAIL_BODY%(form_detail[u'main_contact']['name'], form_detail[u'event'], form_detail[u'team_name'], contacts)
-            subject = MAIL_SUBJECT%form_detail[u'event']
+            subject = "UDYAM'18 "+form_detail[u'event']
             send_email(form_detail[u'main_contact']['email'], subject, body)
             send_email(events_data[form_detail[u'event']][1], subject, body)
             #mail = SendMail(form_detail)
