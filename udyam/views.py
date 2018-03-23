@@ -35,7 +35,7 @@ Regards
 Team UDYAM
 
 ‌'''
-MAIL_SUBJECT = "UDYAM'18 %s"
+MAIL_SUBJECT = u"UDYAM'18 %s"
 @csrf_exempt
 def index(request):
     if request.method == 'POST':
