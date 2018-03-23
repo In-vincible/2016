@@ -1,3 +1,4 @@
+# -*- coding: utf-8 -*-
 from django.shortcuts import render, HttpResponse
 from .models import RegistrationInfo
 from django.views.decorators.csrf import csrf_exempt
@@ -20,7 +21,7 @@ events_data = {
     'raspi': ('RASPI', 't.sairam.ece13@iitbhu.ac.in')
 }
 
-MAIL_BODY = u'''
+MAIL_BODY = '''
 Dear %s
 
 Thanks for registering for %s UDYAM'18.
@@ -35,7 +36,7 @@ Regards
 Team UDYAM
 
 ‌'''
-MAIL_SUBJECT = u"UDYAM'18 %s"
+MAIL_SUBJECT = "UDYAM'18 %s"
 @csrf_exempt
 def index(request):
     if request.method == 'POST':
