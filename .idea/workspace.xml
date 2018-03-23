@@ -20,16 +20,6 @@
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="375">
-      <file leaf-file-name="team.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/templates/team.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="526">
-              <caret line="221" column="47" lean-forward="false" selection-start-line="221" selection-start-column="47" selection-end-line="221" selection-end-column="47" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="digisim.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/templates/digisim.html">
           <provider selected="true" editor-type-id="text-editor">
@@ -50,7 +40,7 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="views.py" pinned="false" current-in-tab="true">
+      <file leaf-file-name="views.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/udyam/views.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="69">
@@ -58,6 +48,16 @@
               <folding>
                 <element signature="e#24#73#0" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="krypto.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/templates/krypto.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="344">
+              <caret line="77" column="33" lean-forward="false" selection-start-line="77" selection-start-column="33" selection-end-line="77" selection-end-column="33" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -84,14 +84,22 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="send_mail.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/udyam/send_mail.py">
+      <file leaf-file-name="i-chip.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/templates/i-chip.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="259">
-              <caret line="19" column="31" lean-forward="false" selection-start-line="19" selection-start-column="31" selection-end-line="19" selection-end-column="31" />
-              <folding>
-                <element signature="e#0#15#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="315">
+              <caret line="36" column="184" lean-forward="false" selection-start-line="36" selection-start-column="184" selection-end-line="36" selection-end-column="184" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="i-chip-w.html" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/templates/i-chip-w.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="443">
+              <caret line="44" column="5" lean-forward="false" selection-start-line="44" selection-start-column="5" selection-end-line="44" selection-end-column="5" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -105,16 +113,6 @@
                 <element signature="n#style#0;n#div#0;n#section#0;n#body#0;n#html#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#div#1;n#section#0;n#body#0;n#html#0;n#!!top" expanded="true" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="mail_data.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/udyam/mail_data.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="504">
-              <caret line="24" column="71" lean-forward="false" selection-start-line="24" selection-start-column="71" selection-end-line="24" selection-end-column="71" />
-              <folding />
             </state>
           </provider>
         </entry>
@@ -153,6 +151,7 @@
       <find>img</find>
       <find>khaya</find>
       <find>register_</find>
+      <find>me</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -172,7 +171,6 @@
         <option value="$PROJECT_DIR$/templates/sponsors.html" />
         <option value="$PROJECT_DIR$/udyam/static/css/navigation.css" />
         <option value="$PROJECT_DIR$/templates/workshop.html" />
-        <option value="$PROJECT_DIR$/templates/i-chip-w.html" />
         <option value="$PROJECT_DIR$/templates/commnet-w.html" />
         <option value="$PROJECT_DIR$/templates/digisim-w.html" />
         <option value="$PROJECT_DIR$/templates/funckit-w.html" />
@@ -185,8 +183,6 @@
         <option value="$PROJECT_DIR$/templates/commnet.html" />
         <option value="$PROJECT_DIR$/templates/continuum.html" />
         <option value="$PROJECT_DIR$/templates/funckit.html" />
-        <option value="$PROJECT_DIR$/templates/krypto.html" />
-        <option value="$PROJECT_DIR$/templates/i-chip.html" />
         <option value="$PROJECT_DIR$/templates/team.html" />
         <option value="$PROJECT_DIR$/udyam/mail_data.py" />
         <option value="$PROJECT_DIR$/udyam/send_mail.py" />
@@ -195,6 +191,9 @@
         <option value="$PROJECT_DIR$/templates/mosaic.html" />
         <option value="$PROJECT_DIR$/templates/adminD.html" />
         <option value="$PROJECT_DIR$/udyam/views.py" />
+        <option value="$PROJECT_DIR$/templates/krypto.html" />
+        <option value="$PROJECT_DIR$/templates/i-chip.html" />
+        <option value="$PROJECT_DIR$/templates/i-chip-w.html" />
       </list>
     </option>
   </component>
@@ -250,6 +249,20 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="udyam" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="2016" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="2016" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="templates" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -562,7 +575,7 @@
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32930845" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
       <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.4884742" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.30515915" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.1796875" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="manage.py@2016" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32930845" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
@@ -727,14 +740,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/templates/i-chip-w.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="651">
-          <caret line="31" column="2" lean-forward="false" selection-start-line="31" selection-start-column="2" selection-end-line="32" selection-end-column="10" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/templates/commnet-w.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1029">
@@ -847,14 +852,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/templates/i-chip.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="294">
-          <caret line="35" column="108" lean-forward="false" selection-start-line="35" selection-start-column="108" selection-end-line="35" selection-end-column="108" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/templates/continuum.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="295">
@@ -875,14 +872,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="189">
           <caret line="12" column="36" lean-forward="false" selection-start-line="12" selection-start-column="36" selection-end-line="12" selection-end-column="36" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/templates/krypto.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="442">
-          <caret line="80" column="27" lean-forward="false" selection-start-line="80" selection-start-column="27" selection-end-line="80" selection-end-column="27" />
           <folding />
         </state>
       </provider>
@@ -1009,6 +998,30 @@
           <folding>
             <element signature="e#24#73#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/krypto.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="344">
+          <caret line="77" column="33" lean-forward="false" selection-start-line="77" selection-start-column="33" selection-end-line="77" selection-end-column="33" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/i-chip.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="315">
+          <caret line="36" column="184" lean-forward="false" selection-start-line="36" selection-start-column="184" selection-end-line="36" selection-end-column="184" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/i-chip-w.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="443">
+          <caret line="44" column="5" lean-forward="false" selection-start-line="44" selection-start-column="5" selection-end-line="44" selection-end-column="5" />
+          <folding />
         </state>
       </provider>
     </entry>
