@@ -84,7 +84,8 @@ def static_page(request, page):
 
 def adminData(request):
     oll = RegistrationInfo.objects.all()
-    return render(request, 'adminD.html', {'data': oll})
+    aa=oll.order_by('event_name')
+    return render(request, 'adminD.html', {'data': aa})
 
 def send_email(recipient, subject, body):
 	return requests.post("https://api.mailgun.net/v3/mg.udyamfest.in/messages",auth=("api", "key-716da2426e77cc5296dacd1e4768672d"),data={"from": "Udyam<no-reply@udyamfest.in>","to": recipient,"subject": subject,"text": body})
