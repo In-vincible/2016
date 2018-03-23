@@ -20,7 +20,7 @@ events_data = {
     'raspi': ('RASPI', 't.sairam.ece13@iitbhu.ac.in')
 }
 
-MAIL_BODY = '''
+MAIL_BODY = u'''
 Dear %s
 
 Thanks for registering for %s UDYAM'18.
@@ -33,6 +33,7 @@ Note: As this is an automatically generated email, please don't reply to this ma
 
 Regards
 Team UDYAM
+
 ‌'''
 
 MAIL_SUBJECT = u"UDYAM'18 %s"
