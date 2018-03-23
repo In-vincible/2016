@@ -35,7 +35,6 @@ Regards
 Team UDYAM
 
 ‌'''
-
 MAIL_SUBJECT = u"UDYAM'18 %s"
 @csrf_exempt
 def index(request):
