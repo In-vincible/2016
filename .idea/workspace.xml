@@ -30,16 +30,6 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="base.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/templates/base.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="525">
-              <caret line="25" column="41" lean-forward="false" selection-start-line="25" selection-start-column="41" selection-end-line="25" selection-end-column="41" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="views.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/udyam/views.py">
           <provider selected="true" editor-type-id="text-editor">
@@ -48,6 +38,26 @@
               <folding>
                 <element signature="e#24#73#0" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="krypto-w.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/templates/krypto-w.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="294">
+              <caret line="48" column="5" lean-forward="true" selection-start-line="48" selection-start-column="5" selection-end-line="48" selection-end-column="5" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="continuum.html" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/templates/continuum.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="400">
+              <caret line="43" column="69" lean-forward="false" selection-start-line="43" selection-start-column="69" selection-end-line="43" selection-end-column="69" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -67,6 +77,16 @@
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="598">
               <caret line="117" column="8" lean-forward="false" selection-start-line="117" selection-start-column="8" selection-end-line="117" selection-end-column="8" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="mosaic-w.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/templates/mosaic-w.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="472">
+              <caret line="53" column="131" lean-forward="false" selection-start-line="53" selection-start-column="131" selection-end-line="53" selection-end-column="131" />
               <folding />
             </state>
           </provider>
@@ -94,34 +114,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="i-chip-w.html" pinned="false" current-in-tab="true">
+      <file leaf-file-name="i-chip-w.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/templates/i-chip-w.html">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="443">
               <caret line="44" column="5" lean-forward="false" selection-start-line="44" selection-start-column="5" selection-end-line="44" selection-end-column="5" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="home.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/templates/home.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="765">
-              <caret line="588" column="33" lean-forward="false" selection-start-line="588" selection-start-column="33" selection-end-line="588" selection-end-column="33" />
-              <folding>
-                <element signature="n#style#0;n#div#0;n#section#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#div#1;n#section#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="digisim-w.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/templates/digisim-w.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="836">
-              <caret line="45" column="153" lean-forward="false" selection-start-line="45" selection-start-column="153" selection-end-line="45" selection-end-column="153" />
               <folding />
             </state>
           </provider>
@@ -174,14 +171,12 @@
         <option value="$PROJECT_DIR$/templates/commnet-w.html" />
         <option value="$PROJECT_DIR$/templates/digisim-w.html" />
         <option value="$PROJECT_DIR$/templates/funckit-w.html" />
-        <option value="$PROJECT_DIR$/templates/krypto-w.html" />
         <option value="$PROJECT_DIR$/templates/algo.py" />
         <option value="$PROJECT_DIR$/templates/continuum-w.html" />
         <option value="$PROJECT_DIR$/templates/mosaic-w.html" />
         <option value="$PROJECT_DIR$/templates/events.html" />
         <option value="$PROJECT_DIR$/templates/muse.html" />
         <option value="$PROJECT_DIR$/templates/commnet.html" />
-        <option value="$PROJECT_DIR$/templates/continuum.html" />
         <option value="$PROJECT_DIR$/templates/funckit.html" />
         <option value="$PROJECT_DIR$/templates/team.html" />
         <option value="$PROJECT_DIR$/udyam/mail_data.py" />
@@ -194,6 +189,8 @@
         <option value="$PROJECT_DIR$/templates/krypto.html" />
         <option value="$PROJECT_DIR$/templates/i-chip.html" />
         <option value="$PROJECT_DIR$/templates/i-chip-w.html" />
+        <option value="$PROJECT_DIR$/templates/krypto-w.html" />
+        <option value="$PROJECT_DIR$/templates/continuum.html" />
       </list>
     </option>
   </component>
@@ -772,26 +769,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/templates/krypto-w.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="21">
-          <caret line="44" column="99" lean-forward="false" selection-start-line="44" selection-start-column="99" selection-end-line="44" selection-end-column="99" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/templates/continuum-w.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="378">
           <caret line="36" column="5" lean-forward="false" selection-start-line="36" selection-start-column="5" selection-end-line="36" selection-end-column="5" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/templates/mosaic-w.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="472">
-          <caret line="53" column="131" lean-forward="false" selection-start-line="53" selection-start-column="131" selection-end-line="53" selection-end-column="131" />
           <folding />
         </state>
       </provider>
@@ -848,14 +829,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="151">
           <caret line="33" column="0" lean-forward="false" selection-start-line="33" selection-start-column="0" selection-end-line="33" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/templates/continuum.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="295">
-          <caret line="32" column="85" lean-forward="false" selection-start-line="32" selection-start-column="85" selection-end-line="32" selection-end-column="85" />
           <folding />
         </state>
       </provider>
@@ -1021,6 +994,30 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="443">
           <caret line="44" column="5" lean-forward="false" selection-start-line="44" selection-start-column="5" selection-end-line="44" selection-end-column="5" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/mosaic-w.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="472">
+          <caret line="53" column="131" lean-forward="false" selection-start-line="53" selection-start-column="131" selection-end-line="53" selection-end-column="131" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/krypto-w.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="294">
+          <caret line="48" column="5" lean-forward="true" selection-start-line="48" selection-start-column="5" selection-end-line="48" selection-end-column="5" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/continuum.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="400">
+          <caret line="43" column="69" lean-forward="false" selection-start-line="43" selection-start-column="69" selection-end-line="43" selection-end-column="69" />
           <folding />
         </state>
       </provider>
