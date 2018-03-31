@@ -20,7 +20,7 @@ BASE_DIR = os.path.abspath(os.path.join(os.path.dirname(__file__)))
 
 # SECURITY WARNING: keep the secret key used in production secret!
 SECRET_KEY = 's_fn#bonqb-@acp2nk83dt2pu&m678l7h&loh!9%-2*@+jx7yu'
-
+LOGIN_REDIRECT_URL = '/quiz/'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
@@ -37,6 +37,10 @@ INSTALLED_APPS = (
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'udyam',
+    'quiz',
+    'multichoice',
+    'true_false',
+    'essay',
     'whitenoise.runserver_nostatic',
 )
 
@@ -105,3 +109,7 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/1.8/howto/static-files/
 STATIC_ROOT = os.path.join(BASE_DIR, "static/")
 STATIC_URL = '/static/'
+MEDIA_ROOT = os.path.join(BASE_DIR,'uploads\\')
+print(MEDIA_ROOT)
+print(STATIC_ROOT)
+MEDIA_URL = '/'

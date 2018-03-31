@@ -1,5 +1,7 @@
 # -*- coding: utf-8 -*-
-from django.shortcuts import render, HttpResponse
+from django.contrib.auth import login, authenticate
+from django.contrib.auth.forms import UserCreationForm
+from django.shortcuts import render, HttpResponse, redirect
 from .models import RegistrationInfo
 from django.views.decorators.csrf import csrf_exempt
 import json
@@ -88,4 +90,18 @@ def adminData(request):
     return render(request, 'adminD.html', {'data': aa})
 
 def send_email(recipient, subject, body):
-	return requests.post("https://api.mailgun.net/v3/mg.udyamfest.in/messages",auth=("api", "key-716da2426e77cc5296dacd1e4768672d"),data={"from": "Udyam<no-reply@udyamfest.in>","to": recipient,"subject": subject,"text": body})
+    return requests.post("https://api.mailgun.net/v3/mg.udyamfest.in/messages",auth=("api", "key-716da2426e77cc5296dacd1e4768672d"),data={"from": "Udyam<no-reply@udyamfest.in>","to": recipient,"subject": subject,"text": body})
+
+def signup(request):
+    if request.method == 'POST':
+        form = UserCreationForm(request.POST)
+        if form.is_valid():
+            form.save()
+            username = form.cleaned_data.get('username')
+            raw_password = form.cleaned_data.get('password1')
+            user = authenticate(username=username, password=raw_password)
+            login(request, user)
+            return redirect('home')
+    else:
+        form = UserCreationForm()
+    return render(request, 'signup.html', {'form': form})

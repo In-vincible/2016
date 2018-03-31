@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="keywords" content="UDYAM, EES, Electronics iitbhu technical fest, iit(bhu) ees">
     <meta name="author" content="Amit Gupta, Bhavdeep Singh">
+
     <title>UDYAM 2018 |{% block title %} {% endblock %}</title>
 
         <link href="{% static 'css/materialize.css' %}" rel="stylesheet">
@@ -15,7 +16,12 @@
     <!--Let browser know website is optimized for mobile-->
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=yes"/>
     <!-- Scroll Animation Initialize -->
-    <style> [data-sr] { visibility: hidden; } </style>  
+    <style> [data-sr] { visibility: hidden; } </style>
+    <link rel="stylesheet" href="http://netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css">
+
+<!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
+<!--[if lt IE 9]>
+<script src="//html5shim.googlecode.com/svn/trunk/html5.js"></script>
     <!-- Global site tag (gtag.js) - Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-113699821-1"></script>
     <script>
@@ -39,5 +45,12 @@
         <script src="{% static 'js/laurenz.js' %}"></script>
     {% block js %}
     {% endblock %}
+<div class="container" style="background-color:lightblue">
+
+{% block content %}
+
+{% endblock %}
+
+</div>
 </body>
 </html>
