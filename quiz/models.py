@@ -552,7 +552,7 @@ class Question(models.Model):
                                      blank=True,
                                      null=True)
 
-    figure = models.ImageField(upload_to='udyam/static/uploads/%Y/%m/%d',
+    figure = models.ImageField(upload_to='uploads/%Y/%m/%d',
                                blank=True,
                                null=True,
                                verbose_name=_("Figure"))
