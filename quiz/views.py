@@ -420,6 +420,7 @@ def quizscores(request, qname):
             marks=2
             nmarks=1
             cur_scr=s.current_score
+            sid=s.id
             uid=user.filter(id=s.user_id).first().username
             cur_scr*=marks
             uans = s.user_answers
@@ -450,7 +451,7 @@ def quizscores(request, qname):
             else:
                 dur.append('-')
             dura=dur[-1]
-            dict={'id':s.id, 'user_id':uid, 'current_score':cur_scr, 'user_answers':uans, 'start':s_start, 'end':dura}
+            dict={'id':sid, 'user_id':uid, 'current_score':cur_scr, 'user_answers':uans, 'start':s_start, 'end':dura}
             data1.append(dict)
     return render(request, 'scores.html', {'data': data1})
 
