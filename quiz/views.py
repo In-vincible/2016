@@ -419,19 +419,27 @@ def quizscores(request, qname):
         sit=Sitting.objects.filter(quiz_id=qlist.id)
         dur=[]
         for s in sit:
+            marks=2
+            nmarks=1
             s.user_id=user.filter(id=s.user_id).first().username
-            s.current_score*=2
+            s.current_score*=marks
             arr=([int(s) for s in re.findall(r'-?\d+\.?\d*', s.user_answers)])
-            arr1 = ([int(s) for s in re.findall(r'-?\d+\.?\d*', s.incorrect_questions)])
+            #arr1 = ([int(s) for s in re.findall(r'-?\d+\.?\d*', s.incorrect_questions)])
             ansarr=[]
             for i in range(qlist.max_questions):
                 ansarr.append(0)
             for i in range(len(arr)//2):
                 ansarr[arr[2*i]-1]=arr[2*i+1]
-            for i in arr1:
-                if ansarr[i-1]%5!=0 :
-                    s.current_score-=1
-
+            #for i in arr1:
+            #    if ansarr[i-1]%5!=0 :
+            #        s.current_score-=nmarks
+            cn=0
+            for i in range(qlist.max_questions):
+                if ansarr[i]%5==0:
+                    cn+=1
+            wq=qlist.max_questions-(s.current_score//2)
+            wq-=cn
+            s.current_score-=(wq*nmarks)
             if s.end!=None:
                 k=s.end-s.start
                 dur.append(divmod(k.days * 86400 + k.seconds, 60))
