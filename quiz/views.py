@@ -422,8 +422,9 @@ def quizscores(request, qname):
             cur_scr=s.current_score
             uid=user.filter(id=s.user_id).first().username
             cur_scr*=marks
-            arr=([int(s) for s in re.findall(r'-?\d+\.?\d*', s.user_answers)])
-            uans=s.user_answers
+            uans = s.user_answers
+            arr=([int(s) for s in re.findall(r'-?\d+\.?\d*', uans)])
+
             #arr1 = ([int(s) for s in re.findall(r'-?\d+\.?\d*', s.incorrect_questions)])
             ansarr=[]
             for i in range(qlist.max_questions):
