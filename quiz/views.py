@@ -423,6 +423,8 @@ def quizscores(request, qname):
             uid=user.filter(id=s.user_id).first().username
             cur_scr*=marks
             uans = s.user_answers
+            s_end = s.end
+            s_start = s.start
             arr=([int(s) for s in re.findall(r'-?\d+\.?\d*', uans)])
 
             #arr1 = ([int(s) for s in re.findall(r'-?\d+\.?\d*', s.incorrect_questions)])
@@ -440,10 +442,9 @@ def quizscores(request, qname):
                     cn+=1
             wq=qlist.max_questions-(cur_scr//marks)
             wq-=cn
-            s_end=s.end
-            s_start=s.start
+
             cur_scr-=(wq*nmarks)
-            if s.end!=None:
+            if s_end!=None:
                 k=s_end-s_start
                 dur.append(divmod(k.days * 86400 + k.seconds, 60))
             else:
