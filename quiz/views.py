@@ -421,8 +421,9 @@ def quizscores(request, qname):
         for s in sit:
             marks=2
             nmarks=1
+            cur_scr=s.current_score
             s.user_id=user.filter(id=s.user_id).first().username
-            s.current_score*=marks
+            cur_scr*=marks
             arr=([int(s) for s in re.findall(r'-?\d+\.?\d*', s.user_answers)])
             #arr1 = ([int(s) for s in re.findall(r'-?\d+\.?\d*', s.incorrect_questions)])
             ansarr=[]
@@ -437,7 +438,7 @@ def quizscores(request, qname):
             for i in range(qlist.max_questions):
                 if ansarr[i]%5==0:
                     cn+=1
-            wq=qlist.max_questions-(s.current_score//2)
+            wq=qlist.max_questions-(cur_scr//marks)
             wq-=cn
             s.current_score-=(wq*nmarks)
             if s.end!=None:
