@@ -162,7 +162,7 @@ class QuizTake(FormView):
             self.sitting = Sitting.objects.user_sitting(request.user,
                                                         self.quiz)
             try:
-                start_time_user = self.sitting.start.replace(tzinfo=utc)
+                start_time_user = self.sitting.start
                 k = now - start_time_user
                 k1 = (divmod(k.days * 86400 + k.seconds, 60))
                 el_time = k1[0] + (k1[1] / 60)
@@ -409,22 +409,21 @@ def anon_session_score(session, to_add=0, possible=0):
     return session["session_score"], session["session_score_possible"]
 
 def quizscores(request, qname):
-    error = 0
-    e1='ad'
-    arr=''
     if 1:
         #print (request.body)
         user=User.objects.all()
         qlist=Quiz.objects.filter(title=qname).first()
         sit=Sitting.objects.filter(quiz_id=qlist.id)
         dur=[]
+        data1=[]
         for s in sit:
             marks=2
             nmarks=1
             cur_scr=s.current_score
-            s.user_id=user.filter(id=s.user_id).first().username
+            uid=user.filter(id=s.user_id).first().username
             cur_scr*=marks
             arr=([int(s) for s in re.findall(r'-?\d+\.?\d*', s.user_answers)])
+            uans=s.user_answers
             #arr1 = ([int(s) for s in re.findall(r'-?\d+\.?\d*', s.incorrect_questions)])
             ansarr=[]
             for i in range(qlist.max_questions):
@@ -440,14 +439,17 @@ def quizscores(request, qname):
                     cn+=1
             wq=qlist.max_questions-(cur_scr//marks)
             wq-=cn
-            s.current_score-=(wq*nmarks)
+            s_end=s.end
+            s_start=s.start
+            cur_scr-=(wq*nmarks)
             if s.end!=None:
-                k=s.end-s.start
+                k=s_end-s_start
                 dur.append(divmod(k.days * 86400 + k.seconds, 60))
             else:
                 dur.append('-')
-            s.end=dur[-1]
-
-    return render(request, 'scores.html', {'data': sit})
+            dura=dur[-1]
+            dict={'id':s.id, 'user_id':uid, 'current_score':cur_scr, 'user_answers':uans, 'start':s_start, 'end':dura}
+            data1.append(dict)
+    return render(request, 'scores.html', {'data': data1})
 
 
