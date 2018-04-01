@@ -73,6 +73,15 @@ class Quiz(models.Model):
         verbose_name=_("Description"),
         blank=True, help_text=_("a description of the quiz"))
 
+    start_time = models.DateTimeField(null=True, blank=True,
+                                 verbose_name=_("Start_time"))
+
+    end_time = models.DateTimeField(null=True, blank=True, verbose_name=_("End_time"))
+
+    duration = models.IntegerField(
+        verbose_name=_("Duration"),
+        blank=True, help_text=_("duration in minutes"))
+
     url = models.SlugField(
         max_length=60, blank=False,
         help_text=_("a user friendly url"),
@@ -173,6 +182,8 @@ class Quiz(models.Model):
         return str(self.id) + "_data"
 
 
+
+
 class ProgressManager(models.Manager):
 
     def new_progress(self, user):
@@ -180,6 +191,7 @@ class ProgressManager(models.Manager):
                                    score="")
         new_progress.save()
         return new_progress
+
 
 
 class Progress(models.Model):
@@ -552,7 +564,7 @@ class Question(models.Model):
                                      blank=True,
                                      null=True)
 
-    figure = models.ImageField(upload_to='uploads/%Y/%m/%d',
+    figure = models.ImageField(upload_to='udya/static/uploads/%Y/%m/%d',
                                blank=True,
                                null=True,
                                verbose_name=_("Figure"))
@@ -579,3 +591,4 @@ class Question(models.Model):
 
     def __str__(self):
         return self.content
+

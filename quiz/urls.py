@@ -2,7 +2,7 @@ from django.conf.urls import patterns, url
 
 from .views import QuizListView, CategoriesListView,\
     ViewQuizListByCategory, QuizUserProgressView, QuizMarkingList,\
-    QuizMarkingDetail, QuizDetailView, QuizTake
+    QuizMarkingDetail, QuizDetailView, QuizTake, quizscores
 
 
 urlpatterns = patterns('',
@@ -39,5 +39,8 @@ urlpatterns = patterns('',
                        url(regex=r'^(?P<quiz_name>[\w-]+)/take/$',
                            view=QuizTake.as_view(),
                            name='quiz_question'),
+                       url(regex=r'^(?P<qname>[\w-]+)/scores/$',
+                           view=quizscores,
+                           ),
 
 )

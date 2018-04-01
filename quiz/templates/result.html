@@ -7,10 +7,13 @@
 {% block description %} {% trans "Exam Results for" %} {{ quiz.title }} {% endblock %}
 
 {% block content %}
-
+    <p class="muted"><small>{% trans "You are done here." %}:</small></p>
+      <a href="/logout/" class="btn btn-default">Logout</a>
   {% if previous.answers %}
+<!--
+  <p class="muted"><small>{% trans "You are done here." %}:</small></p>
+      <a href="/logout/" class="btn btn-default">Logout</a>
 
-  <p class="muted"><small>{% trans "The previous question" %}:</small></p>
   <p>{{ previous.previous_question }}</p>
   <p>Your answer was
 	<strong>
@@ -25,9 +28,9 @@
   <hr>
 
   {% endif %}
-
+-->
   {% if max_score %}
-
+<!--
   <div>
 	<h2>{% trans "Exam results" %}</h2>
 	<p>
@@ -94,6 +97,6 @@
   {% endfor %}
 
   {% endif %}
-
+-->
 
 {% endblock %}

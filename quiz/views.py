@@ -5,12 +5,14 @@ from django.core.exceptions import PermissionDenied
 from django.shortcuts import get_object_or_404, render
 from django.utils.decorators import method_decorator
 from django.views.generic import DetailView, ListView, TemplateView, FormView
-
+from django.contrib.auth.models import User
 from .forms import QuestionForm, EssayForm
 from .models import Quiz, Category, Progress, Sitting, Question
 from essay.models import Essay_Question
-
-
+import re, datetime
+import pytz
+from django.utils import timezone
+utc=pytz.UTC
 class QuizMarkerMixin(object):
     @method_decorator(login_required)
     @method_decorator(permission_required('quiz.view_sittings'))
@@ -134,11 +136,24 @@ class QuizMarkingDetail(QuizMarkerMixin, DetailView):
 
 
 class QuizTake(FormView):
+    print('step -1')
     form_class = QuestionForm
     template_name = 'question.html'
-
+    print('step 0')
     def dispatch(self, request, *args, **kwargs):
+        print('step 1')
         self.quiz = get_object_or_404(Quiz, url=self.kwargs['quiz_name'])
+        now = timezone.now()
+        start_time = self.quiz.start_time.replace(tzinfo=utc)
+        end_time = self.quiz.end_time.replace(tzinfo=utc)
+        if now<start_time:
+            text='Quiz has not started yet'
+            return render(request, 'message.html', {'text': text})
+        elif now>end_time:
+            text = 'Quiz has ended'
+            return render(request, 'message.html', {'text': text})
+
+
         if self.quiz.draft and not request.user.has_perm('quiz.change_quiz'):
             raise PermissionDenied
 
@@ -147,6 +162,16 @@ class QuizTake(FormView):
         if self.logged_in_user:
             self.sitting = Sitting.objects.user_sitting(request.user,
                                                         self.quiz)
+            try:
+                start_time_user = self.sitting.start.replace(tzinfo=utc)
+                k = now - start_time_user
+                k1 = (divmod(k.days * 86400 + k.seconds, 60))
+                el_time = k1[0] + (k1[1] / 60)
+                if el_time>= self.quiz.duration:
+                    text = 'Time is Up'
+                    return render(request, 'message.html', {'text': text})
+            except:
+                pass
         else:
             self.sitting = self.anon_load_sitting()
 
@@ -156,6 +181,7 @@ class QuizTake(FormView):
         return super(QuizTake, self).dispatch(request, *args, **kwargs)
 
     def get_form(self, form_class):
+        print('step 2')
         if self.logged_in_user:
             self.question = self.sitting.get_first_question()
             self.progress = self.sitting.progress()
@@ -169,10 +195,12 @@ class QuizTake(FormView):
         return form_class(**self.get_form_kwargs())
 
     def get_form_kwargs(self):
+        print('step 3')
         kwargs = super(QuizTake, self).get_form_kwargs()
         return dict(kwargs, question=self.question)
 
     def form_valid(self, form):
+        print('step 4')
         if self.logged_in_user:
             self.form_valid_user(form)
             if self.sitting.get_first_question() is False:
@@ -187,6 +215,7 @@ class QuizTake(FormView):
         return super(QuizTake, self).get(self, self.request)
 
     def get_context_data(self, **kwargs):
+        print('step 5')
         context = super(QuizTake, self).get_context_data(**kwargs)
         context['question'] = self.question
         print ((context['question']))
@@ -198,6 +227,7 @@ class QuizTake(FormView):
         return context
 
     def form_valid_user(self, form):
+        print('step 6')
         progress, c = Progress.objects.get_or_create(user=self.request.user)
         guess = form.cleaned_data['answers']
         is_correct = self.question.check_if_correct(guess)
@@ -223,6 +253,7 @@ class QuizTake(FormView):
         self.sitting.remove_first_question()
 
     def final_result_user(self):
+        print('step 7')
         results = {
             'quiz': self.quiz,
             'score': self.sitting.get_current_score,
@@ -377,3 +408,38 @@ def anon_session_score(session, to_add=0, possible=0):
         session["session_score_possible"] += possible
 
     return session["session_score"], session["session_score_possible"]
+
+def quizscores(request, qname):
+    error = 0
+    e1='ad'
+    arr=''
+    if 1:
+        #print (request.body)
+        user=User.objects.all()
+        qlist=Quiz.objects.filter(title=qname).first()
+        sit=Sitting.objects.filter(quiz_id=qlist.id)
+        dur=[]
+        for s in sit:
+            s.user_id=user.filter(id=s.user_id).first().username
+            s.current_score*=2
+            arr=([int(s) for s in re.findall(r'-?\d+\.?\d*', s.user_answers)])
+            arr1 = ([int(s) for s in re.findall(r'-?\d+\.?\d*', s.incorrect_questions)])
+            ansarr=[]
+            for i in range(qlist.max_questions):
+                ansarr.append(0)
+            for i in range(len(arr)//2):
+                ansarr[arr[2*i]-1]=arr[2*i+1]
+            for i in arr1:
+                if ansarr[i-1]%5!=0 :
+                    s.current_score-=1
+
+            if s.end!=None:
+                k=s.end-s.start
+                dur.append(divmod(k.days * 86400 + k.seconds, 60))
+            else:
+                dur.append('-')
+            s.end=dur[-1]
+
+    return render(request, 'scores.html', {'data': sit})
+
+
