@@ -417,7 +417,7 @@ def quizscores(request, qname):
         dur=[]
         data1=[]
         for s in sit:
-            marks=2
+            marks=1
             nmarks=1
             cur_scr=s.current_score
             sid=s.id
