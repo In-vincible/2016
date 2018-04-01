@@ -10,9 +10,8 @@ from .forms import QuestionForm, EssayForm
 from .models import Quiz, Category, Progress, Sitting, Question
 from essay.models import Essay_Question
 import re, datetime
-import pytz
 from django.utils import timezone
-utc=pytz.UTC
+
 class QuizMarkerMixin(object):
     @method_decorator(login_required)
     @method_decorator(permission_required('quiz.view_sittings'))
@@ -144,8 +143,8 @@ class QuizTake(FormView):
         print('step 1')
         self.quiz = get_object_or_404(Quiz, url=self.kwargs['quiz_name'])
         now = timezone.now()
-        start_time = self.quiz.start_time.replace(tzinfo=utc)
-        end_time = self.quiz.end_time.replace(tzinfo=utc)
+        start_time = self.quiz.start_time
+        end_time = self.quiz.end_time
         if now<start_time:
             text='Quiz has not started yet'
             return render(request, 'message.html', {'text': text})
