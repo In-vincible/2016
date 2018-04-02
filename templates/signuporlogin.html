@@ -6,7 +6,7 @@
     <meta name="keywords" content="UDYAM, EES, Electronics iitbhu technical fest, iit(bhu) ees">
     <meta name="author" content="Amit Gupta, Bhavdeep Singh">
 
-    <title>UDYAM 2018 |{% block title %} {% endblock %}</title>
+    <title>UDYAM 2018 |{% block title %} Login {% endblock %}</title>
 
         <link href="{% static 'css/materialize.css' %}" rel="stylesheet">
         <link href="{% static 'css/styles.css' %}" rel="stylesheet">
@@ -17,7 +17,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=yes"/>
     <!-- Scroll Animation Initialize -->
     <style> [data-sr] { visibility: hidden; } </style>
-   <link rel="stylesheet" href="http://netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css">
+
 
 <!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
 <!--[if lt IE 9]>
@@ -31,7 +31,7 @@
 
         gtag('config', 'UA-113699821-1');
     </script>
-       
+
 </head>
 <body>
     <div id="particles-js" class="green-wine"></div>
@@ -46,15 +46,60 @@
     {% block js %}
     {% endblock %}
 
-
-
-
 <div class="container" style="background-color:#64e5c3">
 
 {% block content %}
+  <div class="w3-bar w3-black">
+  <button class="w3-bar-item w3-button" onclick="openCity('Sign Up')">Sign Up</button>
+  <button class="w3-bar-item w3-button" onclick="openCity('Login')">Login</button>
+</div>
+
+<div id="Sign Up" class="w3-container city">
+  <h2>Sign Up</h2>
+  <form method="post" >
+    {% csrf_token %}
+
+       <p><label for="id_username"><font color="black" size="4">Username:</font></label> <input id="id_username" maxlength="30" name="username" type="text" /> </p>
+<p><label for="id_password1"><font color="black" size="4">Password:</font></label>
+    <input id="id_password1" name="password1" type="password" /></p>
+<p><label for="id_password2"><font color="black" size="4">Password Confirmation:</font></label>
+    <input id="id_password2" name="password2" type="password" /> <span class="helptext">Enter the same password as above, for verification.</span></p>
+
+    <button type="submit">Sign up</button>
+  </form>
+
+</div>
+
+<div id="Login" class="w3-container city" style="display:none">
+  <h2>Login</h2>
+   <form method="POST" action="login/">
+        {% csrf_token %}
+        <p>
+            <label><font color="black" size="4">Username</font></label>
+            <input type="text" name="username" size="6" >
+        </p>
+        <p>
+            <label><font color="black" size="4">Password</font></label>
+            <input type="password" name="password">
+        </p>
+        <button type="submit">Login</button>
+    </form>
+</div>
+
+<script>
+function openCity(cityName) {
+    var i;
+    var x = document.getElementsByClassName("city");
+    for (i = 0; i < x.length; i++) {
+       x[i].style.display = "none";
+    }
+    document.getElementById(cityName).style.display = "block";
+}
+</script>
 
 {% endblock %}
 
 </div>
 </body>
 </html>
+
