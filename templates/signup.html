@@ -1,10 +1,65 @@
-{% extends 'base.html' %}
+{% load staticfiles %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="keywords" content="UDYAM, EES, Electronics iitbhu technical fest, iit(bhu) ees">
+    <meta name="author" content="Amit Gupta, Bhavdeep Singh">
 
-{% block content %}
-  <h2>Sign up</h2>
+    <title>UDYAM 2018 |{% block title %} Sign Up {% endblock %}</title>
+
+        <link href="{% static 'css/materialize.css' %}" rel="stylesheet">
+        <link href="{% static 'css/styles.css' %}" rel="stylesheet">
+        <link href="{% static 'css/navigation.css' %}" rel="stylesheet">
+    {% block css %}
+    {% endblock %}
+    <!--Let browser know website is optimized for mobile-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=yes"/>
+    <!-- Scroll Animation Initialize -->
+    <style> [data-sr] { visibility: hidden; } </style>
+
+
+<!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
+<!--[if lt IE 9]>
+<script src="//html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-113699821-1"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'UA-113699821-1');
+    </script>
+
+</head>
+<body>
+    <div id="particles-js" class="green-wine"></div>
+    <div class="green-mint"></div>
+    {% block body %}
+    {% endblock %}
+        <script type="text/javascript" src="{% static 'js/jquery-2.1.4.min.js' %}"></script>
+        <script type="text/javascript" src="{% static 'js/materialize.min.js' %}"></script>
+        <script type="text/javascript" src="{% static 'js/particles.js' %}"></script>
+        <script src='{% static "js/scrollReveal.min.js" %}'></script>
+        <script src="{% static 'js/laurenz.js' %}"></script>
+    {% block js %}
+    {% endblock %}
+
+<div class="container" style="background-color:#64e5c3">
+
+    {% block content %}
+  <h2>Sign up for Quiz</h2>
   <form method="post">
     {% csrf_token %}
     {{ form.as_p }}
     <button type="submit">Sign up</button>
   </form>
 {% endblock %}
+
+</div>
+</body>
+</html>
+
+
+{
