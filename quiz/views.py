@@ -223,6 +223,25 @@ class QuizTake(FormView):
             context['previous'] = self.previous
         if hasattr(self, 'progress'):
             context['progress'] = self.progress
+
+        now = timezone.now()
+        end_time = self.quiz.end_time
+        start_time_user = self.sitting.start
+        duration=self.quiz.duration
+        ka = end_time - now
+        kb = now -start_time_user
+        k1 = (divmod(ka.days * 86400 + ka.seconds, 60))
+        k2 = (divmod(kb.days * 86400 + kb.seconds, 60))
+        el_time1 = k1[0]*60 + k1[1]
+        el_time2 = k2[0] * 60 + k2[1]
+        l_time1 = el_time1
+        l_time2 = duration * 60 - el_time2
+        l_time=0
+        if l_time1<l_time2:
+            l_time=l_time1
+        else:
+            l_time=l_time2
+        context.update({'time1': l_time})
         return context
 
     def form_valid_user(self, form):
