@@ -430,7 +430,6 @@ core-menu > paper-item.core-selected {
         color: white;
     }
 .green-mint {
-    background: /*rgb(41,118,81)*/;	
     background: #2f815c !important;
 }
 .green-spot{
